@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const contentButton = document.querySelector(".content__button");
-  const card = document.querySelector(".card");
+  const storyButton = document.querySelector(".story__button");
+  const storyCard = document.querySelector(".story__card");
 
-  contentButton.addEventListener("click", (event) => {
+  storyButton.addEventListener("click", (event) => {
     const elem = event.target;
     elem.classList.add("clicked");
 
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       elem.classList.remove("clicked");
     }, 400);
 
-    card.classList.add("visible");
-    contentButton.style.display = "none";
+    storyCard.classList.add("visible");
+    storyButton.style.display = "none";
   });
 });
